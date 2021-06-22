@@ -60,7 +60,7 @@ function App() {
             cooking and gardening.
         </p>
         <p>
-            Thank you for taking the time to read my little blurb, let's <a href="#contact">connect</a> and have a conversation soon!
+            Thank you for taking the time to read my little blurb, let's <a href="#ana-values">connect</a> and have a conversation soon!
         </p>
       </>
     }
