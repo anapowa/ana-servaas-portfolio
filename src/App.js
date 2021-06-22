@@ -1,5 +1,5 @@
 import {useState} from "react"
-import { Nav, Footer, Section } from "./components/index";
+import { Nav, Footer, Section, Project } from "./components/index";
 import logo from './assets/images/anaServaas_logo_transparent.png'
 
 function App() {
@@ -22,9 +22,7 @@ function App() {
       id: "projects",
       title: "Projects",
       content: 
-      <p>
-        some projects   
-      </p> 
+      <Project />
     },
     {
       id: "about",
@@ -70,12 +68,13 @@ function App() {
     
   ])
 
-  
   return (
-    <div className="App">
+    <>
       <Nav />
-      <Section sections={sections} />
-    </div>
+      <main className="main">
+        <Section sections={sections} />
+      </main>
+    </>
   );
 }
 

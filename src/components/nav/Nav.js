@@ -1,9 +1,21 @@
 import resume from '../../assets/images/anaServaasSDresume2021.pdf'
 
 export const Nav = () => {
+    const navIn = () => {
+        const main = document.querySelector('main');
+        main.style.opacity = "0.25"
+        main.style.transition = "600ms"
+      }
+    
+      const navOut = () => {
+        const main = document.querySelector('main');
+        main.style.opacity = "1"
+        main.style.transition = "600ms"
+      }
+
     return (
         <header>
-            <nav className="navbar">
+            <nav className="navbar" onMouseEnter={navIn} onMouseLeave={navOut}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a href="#landing" className="nav-link">
