@@ -3,7 +3,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Open+Sans:wght@300;400;700&display=swap&&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap&family=Montserrat+Alternates&family=Montserrat:wght@100;200;400;500&family=Open+Sans:wght@300;400;700&display=swap&&family=Parisienne&display=swap');
 
 :root {
     font-size: 16px;
@@ -13,6 +13,7 @@ body {
     --nav-icon-width: 50px;
     --nav-border-width: 8px;
     --transition-speed: 600ms;
+    --bezier: cubic-bezier(0.32,-0.01, 0.51, 0.88);
     
     --seaweed: #087E8B;
     --text-main: #642714;
@@ -53,7 +54,7 @@ body::-webkit-scrollbar-track {
     background: var(--bg-primary);
 }
 body::-webkit-scrollbar-thumb {
-    background: var(--bg-primary);
+    background: var(--seaweed);
 }
 
 
@@ -70,6 +71,67 @@ main {
     padding: 0;
     overflow: scroll ;
 }
+#pie {
+  padding: 3rem;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 0.1ch;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+}
+
+#ana-logo {
+  animation: fadeIn var(--bezier) 3s forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+#ana-values, #contact {
+  animation-delay: 3s;
+  animation: fade-in var(--bezier) 4s forwards;
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* .fade-in-image {
+  animation: fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation: fadeIn 10s;
+  -o-animation: fadeIn 10s;
+  -ms-animation: fadeIn 10s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+} */
 
 
 /* SECTIONS */
@@ -85,8 +147,9 @@ main {
 .main-section#projects, .main-section#about{
     min-height: 35em;
     height: 100%;
-    font-weight: 400;
+    font-weight: 500;
 }
+
 
 .main-section .sec-title {
     font-weight:bolder;
@@ -124,7 +187,7 @@ main {
     text-align: justify;
 }
 
-#about h4 {
+#about h4, p#call2act {
   margin-left:8%;
   margin-right:8%;
   text-align: center;
@@ -151,7 +214,7 @@ address a {
     display: -webkit-inline-box;
 }
 
-.icon-before::before, .icon-before::after, .elipsis::before {
+.icon-before::before, .icon-after::after, .elipsis::before {
     display: inline-block;
     font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
     font-weight: 900;
@@ -190,6 +253,18 @@ address a {
     #resume::after {
         content: "\f15c";
     }
+
+.icon-before:hover::before, .icon-before:hover::after {
+  transform: translateY(-10%);
+  /* color: var(--bg-about) */
+  /* transition: 200ms; */
+}
+
+.icon-after:hover::after {
+  transform: translateY(-70%) translateX(-50%);
+  color: var(--bg-main);
+  /* transition: 200ms; */
+}
 
 
 /* navbar */
@@ -355,6 +430,8 @@ address a {
   transition: var(--transition-speed);
 }
 
+
+
   /* Small screens */
   @media only screen and (max-width: 600px) {
     .navbar {
@@ -375,9 +452,14 @@ address a {
       justify-content: center;
     }
   
+    body{
+      margin-bottom: 5rem;
+    }
+     
     main {
       margin: 0;
       margin-left: 5rem;
+      overflow-x: scroll;
     }
 
     #landing{
@@ -395,7 +477,7 @@ address a {
         resize: both;
         overflow: auto;
         position: relative;
-        margin-top: 1rem;
+        margin-top: -3rem;
     }
 
     #ana-values {
@@ -411,6 +493,14 @@ address a {
     }
   }
   
+  @media only screen and (min-width: 425px) {
+    main {
+      margin: 0;
+      margin-left: 2rem;
+      overflow-x: scroll;
+    }
+  }
+
   /* Large screens */
   @media only screen and (min-width: 600px) {
     .navbar {
@@ -438,6 +528,7 @@ address a {
         resize: both;
         overflow: auto;
         position: relative;
+        margin-top: -3em;
     }
 
     #ana-values {
@@ -471,7 +562,7 @@ address a {
         resize: both;
         overflow: auto;
         position: relative;
-        margin-top: 1rem;
+        margin-top: -1rem;
     }
 
     #ana-values {
@@ -500,7 +591,7 @@ address a {
         resize: both;
         overflow: auto;
         position: relative;
-        margin-top: 5rem;
+        margin-top: -1rem;
     }
 
     #ana-values {

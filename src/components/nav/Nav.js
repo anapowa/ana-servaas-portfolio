@@ -1,3 +1,4 @@
+import React from 'react';
 import resume from '../../assets/images/anaServaasSDresume2021.pdf'
 
 export const Nav = () => {

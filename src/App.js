@@ -1,3 +1,4 @@
+import React from 'react';
 import {useState} from "react"
 import { Nav, Footer, Section, Project } from "./components/index";
 import logo from './assets/images/anaServaas_logo_transparent.png'
@@ -7,7 +8,7 @@ function App() {
     {
       id: "landing",
       content: 
-        <>
+        <div>
           <img 
             id="ana-logo"
             src={logo}
@@ -16,7 +17,7 @@ function App() {
           />
           <p id="ana-values">Anchored in creativity, communication, cooperation and courage</p>
           <Footer />
-        </>
+        </div>
     }, 
     {
       id: "projects",
@@ -28,16 +29,16 @@ function App() {
       id: "about",
       title: "About Me",
       content: 
-      <>
+      <div>
         <h4>
             It took a leap of faith and the support of my family to embark on this journey.
         </h4>
         <p>
             After the most difficult year most of us have experienced, a lot of lines of code
-            and who knows how many cups of tea, I can confidently say:
-            <strong><q>
+            and who knows how many cups of tea, I can confidently say:&nbsp; 
+            <strong><q> 
                 Hello, my name is Ana Servaas, and 
-                <em>I am a software developer</em>.
+                <em> I am a software developer</em>.
             </q></strong>
         </p>
         <p>
@@ -59,22 +60,23 @@ function App() {
             practicing yoga, artistic endeavors such as painting and glass blowing, and more recently
             cooking and gardening.
         </p>
-        <p>
-            Thank you for taking the time to read my little blurb, let's <a href="#ana-values">connect</a> and have a conversation soon!
+        <p id="call2act">
+            Thank you for stopping by, let's <a href="#ana-values">connect</a> and have a conversation soon!
         </p>
-      </>
-    }
-
-    
+      </div>
+    },   
   ])
 
   return (
-    <>
+    <div>
       <Nav />
       <main className="main">
         <Section sections={sections} />
       </main>
-    </>
+      <footer id="pie">
+      Ana SerVaas 🤓⭐️
+      </footer>
+    </div>
   );
 }
 

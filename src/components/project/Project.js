@@ -1,4 +1,4 @@
-import {useState} from "react"
+import React, {useState} from "react";
 import maze from '../../assets/images/maze.png'
 import triforce from '../../assets/images/triforce.png'
 import kwitter from '../../assets/images/kwitter.png'
