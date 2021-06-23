@@ -186,6 +186,13 @@ main {
     line-height: 2rem;
     text-align: justify;
 }
+#about a {
+  color: var(--seaweed);
+  text-decoration-style: dotted;
+  text-decoration-thickness: .125em;
+  text-underline-offset: .15em;
+  text-decoration-color: var(--bg-projects)
+}
 
 #about h4, p#call2act {
   margin-left:8%;
