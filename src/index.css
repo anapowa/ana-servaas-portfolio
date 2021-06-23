@@ -256,14 +256,11 @@ address a {
 
 .icon-before:hover::before, .icon-before:hover::after {
   transform: translateY(-10%);
-  /* color: var(--bg-about) */
-  /* transition: 200ms; */
 }
 
 .icon-after:hover::after {
   transform: translateY(-70%) translateX(-50%);
   color: var(--bg-main);
-  /* transition: 200ms; */
 }
 
 
