@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from "react"
 import { Nav, Footer, Section, Project } from "./components/index";
 import logo from './assets/images/anaServaas_logo_transparent.png'
-
+import ana from './assets/images/iheartcoding.gif'
 function App() {
   const [sections, setSections] = useState([
     {
@@ -74,7 +74,10 @@ function App() {
         <Section sections={sections} />
       </main>
       <footer id="pie">
-      Ana SerVaas 🤓⭐️
+      <div id="ana-name">
+        <img id="ana-gif" src={ana} alt="View of the ocean, software engineer with animated sunglasses, text 'i heart coding' is shown above her outstreched arms."/>
+        Ana SerVaas 🤓⭐️
+        </div>
       </footer>
     </div>
   );

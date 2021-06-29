@@ -83,6 +83,24 @@ main {
   background-color: var(--bg-secondary);
 }
 
+#ana-gif {
+  display: none;
+}
+
+#ana-name:hover {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ana-name:hover #ana-gif {
+  display:block;
+  width: 25%;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  transition: var(--transition-speed);
+}
+
 #ana-logo {
   animation: fadeIn var(--bezier) 3s forwards;
 }
@@ -462,7 +480,7 @@ address a {
      
     main {
       margin: 0;
-      margin-left: 5rem;
+      /* margin-left: 5rem; */
       overflow-x: scroll;
     }
 
