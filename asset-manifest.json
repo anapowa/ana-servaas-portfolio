@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1e78b4e.chunk.css",
-    "main.js": "/static/js/main.9bbb8784.chunk.js",
-    "main.js.map": "/static/js/main.9bbb8784.chunk.js.map",
+    "main.css": "/static/css/main.07e0b1a0.chunk.css",
+    "main.js": "/static/js/main.10868716.chunk.js",
+    "main.js.map": "/static/js/main.10868716.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.07d26de3.js",
     "runtime-main.js.map": "/static/js/runtime-main.07d26de3.js.map",
     "static/js/2.48ba0445.chunk.js": "/static/js/2.48ba0445.chunk.js",
@@ -10,11 +10,12 @@
     "static/js/3.e338fc8b.chunk.js": "/static/js/3.e338fc8b.chunk.js",
     "static/js/3.e338fc8b.chunk.js.map": "/static/js/3.e338fc8b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e1e78b4e.chunk.css.map": "/static/css/main.e1e78b4e.chunk.css.map",
+    "static/css/main.07e0b1a0.chunk.css.map": "/static/css/main.07e0b1a0.chunk.css.map",
     "static/js/2.48ba0445.chunk.js.LICENSE.txt": "/static/js/2.48ba0445.chunk.js.LICENSE.txt",
     "static/media/anaServaasSDresume2021.82189b71.pdf": "/static/media/anaServaasSDresume2021.82189b71.pdf",
     "static/media/anaServaas_logo_transparent.a23eca3e.png": "/static/media/anaServaas_logo_transparent.a23eca3e.png",
     "static/media/haterade.6d400249.png": "/static/media/haterade.6d400249.png",
+    "static/media/iheartcoding.3a6e4523.gif": "/static/media/iheartcoding.3a6e4523.gif",
     "static/media/kwitter.e046e830.png": "/static/media/kwitter.e046e830.png",
     "static/media/maze.d13c93db.png": "/static/media/maze.d13c93db.png",
     "static/media/triforce.9ede240e.png": "/static/media/triforce.9ede240e.png"
@@ -22,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.07d26de3.js",
     "static/js/2.48ba0445.chunk.js",
-    "static/css/main.e1e78b4e.chunk.css",
-    "static/js/main.9bbb8784.chunk.js"
+    "static/css/main.07e0b1a0.chunk.css",
+    "static/js/main.10868716.chunk.js"
   ]
 }
