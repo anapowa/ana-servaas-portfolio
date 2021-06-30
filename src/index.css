@@ -211,7 +211,9 @@ main {
   text-underline-offset: .15em;
   text-decoration-color: var(--bg-projects)
 }
-
+#about .sec-title {
+  color: var(--seaweed);
+}
 #about h4, p#call2act {
   margin-left:8%;
   margin-right:8%;
@@ -480,7 +482,7 @@ address a {
      
     main {
       margin: 0;
-      /* margin-left: 5rem; */
+      margin-left: 3rem;
       overflow-x: scroll;
     }
 
@@ -491,6 +493,10 @@ address a {
 
     #about {
       padding-bottom: 5rem;
+    }
+    #about p, #about h4, p#call2act, #ana-values, #contact {
+      margin-left:15%;
+      margin-right:15%;
     }
 
     #ana-logo  {
