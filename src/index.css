@@ -74,7 +74,6 @@ main {
 #pie {
   padding: 3rem;
   padding-left: 8%;
-  padding-right: 8%;
   font-family: 'Parisienne', cursive;
   letter-spacing: 0.1ch;
   font-weight: 600;
@@ -94,11 +93,11 @@ main {
   align-items: center;
 }
 #ana-name:hover #ana-gif {
-  display:block;
+  display:inline-block;
   width: 25%;
   border-radius: 50%;
   margin-bottom: 2rem;
-  transition: var(--transition-speed);
+  animation: fade-in var(--bezier) var(--transition-speed) forwards;
 }
 
 #ana-logo {
@@ -494,7 +493,7 @@ address a {
     #about {
       padding-bottom: 5rem;
     }
-    #about p, #about h4, p#call2act, #ana-values, #contact {
+    #about p, #about h4, p#call2act, #ana-values, #contact, #ana-name {
       margin-left:15%;
       margin-right:15%;
     }
