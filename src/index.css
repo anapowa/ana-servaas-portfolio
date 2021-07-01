@@ -469,13 +469,13 @@ address a {
       justify-content: center;
     }
   
-    body{
+    body {
       margin-bottom: 5rem;
     }
      
     main, #pie {
       margin: 0;
-      margin-left: 2rem;
+      margin-left: 3rem;
       overflow-x: scroll;
       overflow-y: scroll;
     }
@@ -515,10 +515,10 @@ address a {
     }
   }
   
-  @media only screen and (min-width: 425px) {
-    main {
+  @media only screen and (min-width: 419px) {
+    main, #pie {
       margin: 0;
-      margin-left: 2rem;
+      margin-left: 0rem;
       overflow-x: scroll;
     }
   }
@@ -530,7 +530,7 @@ address a {
       padding: 0;
       overflow: scroll ;
   }
-  
+
     .navbar {
       top: 0;
       width: 5rem;
