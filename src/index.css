@@ -66,11 +66,7 @@ body {
     margin: 0;
     padding: 0;
 }
-main, #pie {
-    margin-left: 5rem;
-    padding: 0;
-    overflow: scroll ;
-}
+
 #pie {
   padding: 3rem;
   font-family: 'Parisienne', cursive;
@@ -529,6 +525,12 @@ address a {
 
   /* Large screens */
   @media only screen and (min-width: 600px) {
+    main, #pie {
+      margin-left: 5rem;
+      padding: 0;
+      overflow: scroll ;
+  }
+  
     .navbar {
       top: 0;
       width: 5rem;
