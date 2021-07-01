@@ -66,14 +66,13 @@ body {
     margin: 0;
     padding: 0;
 }
-main {
+main, #pie {
     margin-left: 5rem;
     padding: 0;
     overflow: scroll ;
 }
 #pie {
   padding: 3rem;
-  padding-left: 8%;
   font-family: 'Parisienne', cursive;
   letter-spacing: 0.1ch;
   font-weight: 600;
@@ -479,10 +478,11 @@ address a {
       margin-bottom: 5rem;
     }
      
-    main {
+    main, #pie {
       margin: 0;
-      margin-left: 3rem;
+      margin-left: 2rem;
       overflow-x: scroll;
+      overflow-y: scroll;
     }
 
     #landing{
