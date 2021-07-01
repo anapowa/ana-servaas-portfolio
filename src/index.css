@@ -475,7 +475,7 @@ address a {
      
     main, #pie {
       margin: 0;
-      margin-left: 3rem;
+      margin-left: 5rem;
       overflow-x: scroll;
       overflow-y: scroll;
     }
