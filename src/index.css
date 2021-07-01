@@ -358,7 +358,6 @@ address a {
 .sec-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   justify-content: center;
   margin: 1em;
