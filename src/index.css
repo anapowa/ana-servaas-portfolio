@@ -80,7 +80,9 @@ body {
 #ana-gif {
   display: none;
 }
-
+#ana-name {
+  margin: 2rem;
+}
 #ana-name:hover {
   cursor: pointer;
   display: flex;
@@ -517,9 +519,7 @@ address a {
   
   @media only screen and (min-width: 419px) {
     main, #pie {
-      margin: 0;
       margin-left: 0rem;
-      overflow-x: scroll;
     }
   }
 
