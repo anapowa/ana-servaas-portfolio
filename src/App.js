@@ -1,10 +1,10 @@
 import React from 'react';
-import {useState} from "react"
 import { Nav, Footer, Section, Project } from "./components/index";
 import logo from './assets/images/anaServaas_logo_transparent.png'
 import ana from './assets/images/iheartcoding.gif'
 function App() {
-  const [sections, setSections] = useState([
+  const resume = "https://drive.google.com/file/d/1UFMJAPPb7sywsSB87f7SUKUZkQ6iqfzq/view?usp=sharing"
+  const sections = [
     {
       id: "landing",
       content: 
@@ -16,7 +16,7 @@ function App() {
             name, role, year placed around line drawing of flowering plant grounded by a set of anchor tags"
           />
           <p id="ana-values">Anchored in creativity, communication, cooperation and courage</p>
-          <Footer />
+          <Footer resume={resume}/>
         </div>
     }, 
     {
@@ -64,12 +64,12 @@ function App() {
             Thank you for stopping by, let's <a href="#ana-values">connect</a> and have a conversation soon!
         </p>
       </div>
-    },   
-  ])
-
+    }
+  ]
+  console.log({resume})
   return (
     <div>
-      <Nav />
+      <Nav resume={resume}/>
       <main className="main">
         <Section sections={sections} />
       </main>

@@ -1,5 +1,6 @@
 import React from 'react';
 export const Section = ({sections}) => {
+    console.log(sections)
     return (
         <div>
             {sections.map((section) => (

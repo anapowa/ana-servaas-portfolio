@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Nav = () => {
+export const Nav = ({resume}) => {
     const navIn = () => {
         const main = document.querySelector('main');
         main.style.opacity = "0.25"
@@ -12,7 +12,6 @@ export const Nav = () => {
         main.style.opacity = "1"
         main.style.transition = "600ms"
       }
-
     return (
         <header>
             <nav className="navbar" onMouseEnter={navIn} onMouseLeave={navOut}>
@@ -24,7 +23,7 @@ export const Nav = () => {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="https://drive.google.com/file/d/1UFMJAPPb7sywsSB87f7SUKUZkQ6iqfzq/view?usp=sharing" className="nav-link">
+                        <a href={resume} className="nav-link">
                             <span className="link-text logo-text">Resume</span>
                             <span className="material-icons-round md-48 seaweed">text_snippet</span>
                         </a>
