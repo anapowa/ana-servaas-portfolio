@@ -66,7 +66,6 @@ function App() {
       </div>
     }
   ]
-  console.log({resume})
   return (
     <div>
       <Nav resume={resume}/>
