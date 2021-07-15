@@ -1,5 +1,4 @@
 import React from 'react';
-import resume from '../../assets/images/anaServaasSDresume2021.pdf'
 
 export const Nav = () => {
     const navIn = () => {
@@ -25,8 +24,7 @@ export const Nav = () => {
                         </a>
                     </li>
                     <li className="nav-item">
-                        {/* <a href="https://drive.google.com/file/d/1UFMJAPPb7sywsSB87f7SUKUZkQ6iqfzq/view?usp=sharing" className="nav-link"> */}
-                        <a href={resume} className="nav-link">
+                        <a href="https://drive.google.com/file/d/1UFMJAPPb7sywsSB87f7SUKUZkQ6iqfzq/view?usp=sharing" className="nav-link">
                             <span className="link-text logo-text">Resume</span>
                             <span className="material-icons-round md-48 seaweed">text_snippet</span>
                         </a>
